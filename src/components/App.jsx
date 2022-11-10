@@ -32,7 +32,7 @@ export const App = () => {
     );
 
     if (findedContact) {
-      alert(`${name} is already in contacts`);
+      alert(`${findedContact.name} is already in contacts`);
       return;
     } else {
       setContacts([...contacts, { id: friendId, name, number }]);
